@@ -1,7 +1,0 @@
-{
-  "name": "cricket-app",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "react-vite"
-}
