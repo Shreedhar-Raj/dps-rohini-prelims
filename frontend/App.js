@@ -1,20 +1,43 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import {TouchableOpacity, SafeAreaView} from 'react-native';
+import Button from './components/Button';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaView style={styles.container}>
+      <Button text="Login" />
+    </SafeAreaView>
   );
 }
 
+
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#fff',
+    flex: 1.4,
+    justifyContent: 'flex-start',
+    backgroundColor: '#000',
+  },
+
+  buttonContainer: {
+    backgroundColor: '#000',
+    padding: 15,
+    margin: 5,
+    borderRadius: 20,
     alignItems: 'center',
-    justifyContent: 'center',
+    width: 150,
+    shadowColor: '#A91FFF',
+    shadowOffset: {width: 0, height: 0},
+    shadowOpacity: 0.9,
+    shadowRadius: 6,
+    borderWidth: 0.5,
+    borderColor: "#A91FFf",
+    borderRadius: 50,
+  },
+
+  textStyle: {
+    fontSize: 14,
+    color: 'white',
+    fontWeight: 'bold',
   },
 });
