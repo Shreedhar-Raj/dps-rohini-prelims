@@ -2,11 +2,11 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import {TouchableOpacity, SafeAreaView} from 'react-native';
 import Button from './components/Button';
-
+import Podfame from './screens/Podfame';
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      <Button text="Login" />
+      <Podfame />
     </SafeAreaView>
   );
 }
