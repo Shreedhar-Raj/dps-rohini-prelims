@@ -4,11 +4,14 @@ import {TouchableOpacity, SafeAreaView, TextInput} from 'react-native';
 import MiniHeading from './components/MiniHeading';
 import Login from './screens/Login';
 import Button from './components/Button';
+import SignUp from './screens/SignUp';
+import Welcome from './screens/Welcome';
+
 
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      <Login  />
+      <Welcome />
     </SafeAreaView>
   );
 }

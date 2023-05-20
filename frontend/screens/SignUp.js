@@ -1,14 +1,76 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View, SafeAreaView } from 'react-native'
 import React from 'react'
+import FormInput from '../components/FormInput'
+import MiniHeading from '../components/MiniHeading'
+import Button from '../components/Button'
+import Title from '../components/Title'
+import MiniText from '../components/MiniText'
 
 const SignUp = () => {
   return (
-    <View>
-      <Text>SignUp</Text>
-    </View>
+    <SafeAreaView>
+      <View style={styles.view}>
+            <Title  text="Sign Up" />
+            <View style={styles.everything}>
+                <MiniHeading style={styles.mdtext} text="Email" />
+                <FormInput placeholder="example@email.com" />
+            </View>
+            <View style={styles.everything}>
+                <MiniHeading text="Password" />
+                <FormInput password={true} placeholder="yoursupersecretpassword" />
+            </View>
+            <View style={styles.everything}>
+                <MiniHeading text="Repeat Password" />
+                <FormInput password={true} placeholder="yoursupersecretpassword" />
+                <MiniText text="Already haven an account? Login!" />
+            </View>
+            <View style={styles.buttonContainer}>
+                <Text style={styles.buttonStyle}>Sign Up</Text>
+            </View>
+      </View>
+    </SafeAreaView>
   )
 }
 
 export default SignUp
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+  everything: {
+    paddingTop: 30,
+},
+inbetween: {
+    paddingTop: 10,
+},
+buttonContainer: {
+    backgroundColor: '#000',
+    padding: 15,
+    margin: 5,
+    borderRadius: 20,
+    alignItems: 'center',
+    width: 150,
+    shadowColor: '#A91FFF',
+    shadowOffset: {width: 0, height: 0},
+    shadowOpacity: 0.9,
+    shadowRadius: 15,
+    borderWidth: 0.5,
+    borderColor: "#A91FFf",
+    borderRadius: 50,
+    top: "19%"
+  },
+
+  buttonStyle: {
+    fontSize: 24,
+    color: 'white',
+    fontWeight: 'bold',
+  },
+  view: {
+    top: "25%",
+justifyContent: "center",
+alignItems: "center",
+  },
+  title: {
+
+justifyContent: "center",
+
+  }
+})

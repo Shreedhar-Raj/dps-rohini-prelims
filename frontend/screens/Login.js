@@ -9,7 +9,8 @@ import MiniText from '../components/MiniText'
 const Login = () => {
   return (
     <SafeAreaView>
-            <Title style={styles.title} text="Login" />
+      <View style={styles.view}>
+            <Title  text="Login" />
             <View style={styles.everything}>
                 <MiniHeading style={styles.mdtext} text="Email" />
                 <FormInput placeholder="example@email.com" />
@@ -17,11 +18,12 @@ const Login = () => {
             <View style={styles.everything}>
                 <MiniHeading text="Password" />
                 <FormInput password={true} placeholder="yoursupersecretpassword" />
+                <MiniText text="Don't have an account? Register here!" />
             </View>
-            <MiniText text="Don't have an account? Register here!" />
             <View style={styles.buttonContainer}>
-                <Text style={styles.textStyle}>Login</Text>
+                <Text style={styles.buttonStyle}>Login</Text>
             </View>
+      </View>
     </SafeAreaView>
   )
 }
@@ -30,7 +32,7 @@ export default Login
 
 const styles = StyleSheet.create({
     everything: {
-        paddingTop: 30,
+        paddingTop: 50,
     },
     inbetween: {
         paddingTop: 10,
@@ -45,21 +47,26 @@ const styles = StyleSheet.create({
         shadowColor: '#A91FFF',
         shadowOffset: {width: 0, height: 0},
         shadowOpacity: 0.9,
-        shadowRadius: 6,
+        shadowRadius: 15,
         borderWidth: 0.5,
         borderColor: "#A91FFf",
         borderRadius: 50,
+        top: "29%"
       },
     
-      textStyle: {
+      buttonStyle: {
         fontSize: 24,
         color: 'white',
         fontWeight: 'bold',
       },
       view: {
-        
+        top: "25%",
+    justifyContent: "center",
+    alignItems: "center",
       },
       title: {
-        
+    
+    justifyContent: "center",
+
       }
 })

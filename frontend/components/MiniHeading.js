@@ -14,8 +14,9 @@ export default MiniHeading
 const styles = StyleSheet.create({
     title: {
         fontSize: 17,
-        color: 'gray',
+        color: 'white',
         fontWeight: 'bold',
         paddingBottom: 5,
+        paddingLeft: 6,
     }
 })

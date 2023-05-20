@@ -17,6 +17,7 @@ const styles = StyleSheet.create({
         color: 'gray',
         fontWeight: 'bold',
         fontStyle: 'italic',
-        paddingTop: 7,
+        paddingTop: 10,
+        paddingLeft: 9,
     }
 })
