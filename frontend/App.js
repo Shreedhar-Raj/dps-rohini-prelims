@@ -8,6 +8,8 @@ import SignUp from './screens/SignUp';
 import Welcome from './screens/Welcome';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import Pricing from './screens/Pricing';
+import TeamPref from './screens/TeamPref';
 
 
 export default function App() {
@@ -24,6 +26,12 @@ export default function App() {
         <Stack.Screen name="LoginScreen"options={{
           headerShown: false
         }} component={Login} />
+        <Stack.Screen name="PricingScreen"options={{
+          headerShown: false
+        }} component={Pricing} />
+        <Stack.Screen name="TeamPref"options={{
+          headerShown: false
+        }} component={TeamPref} />
       </Stack.Navigator>
     </NavigationContainer>
   );

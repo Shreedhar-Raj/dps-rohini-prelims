@@ -25,9 +25,11 @@ const Login = () => {
                 <MiniText text="Don't have an account? Register here!" />
                 </TouchableOpacity>
             </View>
+            <TouchableOpacity onPress={() => navigation.navigate('PricingScreen')}>
             <View style={styles.buttonContainer}>
                 <Text style={styles.buttonStyle}>Login</Text>
             </View>
+            </TouchableOpacity>
       </View>
     </SafeAreaView>
     </View>

@@ -29,9 +29,11 @@ const SignUp = () => {
                 <MiniText text="Already haven an account? Login!" />
                 </TouchableOpacity>
             </View>
+            <TouchableOpacity onPress={() => navigation.navigate('PricingScreen')}>
             <View style={styles.buttonContainer}>
                 <Text style={styles.buttonStyle}>Sign Up</Text>
             </View>
+            </TouchableOpacity>
       </View>
     </SafeAreaView>
   </View>
