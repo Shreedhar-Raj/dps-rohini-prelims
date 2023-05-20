@@ -1,31 +1,41 @@
-import { SafeAreaView, StyleSheet, Text, Image, View } from 'react-native'
+import { SafeAreaView, StyleSheet, Text, Image, View, TouchableOpacity } from 'react-native'
 import React from 'react'
 import Title from '../components/Title'
 import Button from '../components/Button'
+import { useNavigation } from '@react-navigation/native'
 
 const Welcome = () => {
+  const navigation = useNavigation()
   return (
-    <SafeAreaView>
+    <View style={styles.cnt}>
+      <SafeAreaView >
       <View style={styles.view}>
       <Image source={require("../assets/logo.png")} style={styles.img} />
-        
       <Text style={styles.title}>Welcome To Wikit!</Text>
         <Text style={styles.text}>Join our community to stay connected share experiances, and make memories.</Text>
-        <View style={styles.buttonContainer}>
+        <TouchableOpacity style={styles.buttonContainer} onPress={() => navigation.navigate('RegisterScreen')}>
+        <View>
                 <Text style={styles.buttonStyle}>Continue</Text>
         </View>
+        </TouchableOpacity>
       </View>
     </SafeAreaView>
+    </View>
   )
 }
 
 export default Welcome
 
 const styles = StyleSheet.create({
+  cnt: {
+    backgroundColor: "#000",
+    height: "100%",
+  },
   view: {
     top: "50%",
     justifyContent: "center",
   alignItems: "center",
+  backgroundColor: '#000',
   },
   title: {
     fontSize: 34,

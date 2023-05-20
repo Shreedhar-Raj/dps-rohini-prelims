@@ -5,10 +5,13 @@ import MiniHeading from '../components/MiniHeading'
 import Button from '../components/Button'
 import Title from '../components/Title'
 import MiniText from '../components/MiniText'
+import { useNavigation } from '@react-navigation/native'
 
 const Login = () => {
+  const navigation = useNavigation()
   return (
-    <SafeAreaView>
+    <View style={styles.cnt}>
+      <SafeAreaView>
       <View style={styles.view}>
             <Title  text="Login" />
             <View style={styles.everything}>
@@ -18,13 +21,16 @@ const Login = () => {
             <View style={styles.everything}>
                 <MiniHeading text="Password" />
                 <FormInput password={true} placeholder="yoursupersecretpassword" />
+                <TouchableOpacity onPress={() => navigation.navigate('RegisterScreen')}>
                 <MiniText text="Don't have an account? Register here!" />
+                </TouchableOpacity>
             </View>
             <View style={styles.buttonContainer}>
                 <Text style={styles.buttonStyle}>Login</Text>
             </View>
       </View>
     </SafeAreaView>
+    </View>
   )
 }
 
@@ -68,5 +74,9 @@ const styles = StyleSheet.create({
     
     justifyContent: "center",
 
-      }
+      },
+      cnt: {
+        height: "100%",
+        backgroundColor: '#000'
+      },
 })

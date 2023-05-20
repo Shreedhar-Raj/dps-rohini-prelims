@@ -1,14 +1,17 @@
-import { StyleSheet, Text, View, SafeAreaView } from 'react-native'
+import { StyleSheet, Text, View, SafeAreaView, TouchableOpacity } from 'react-native'
 import React from 'react'
 import FormInput from '../components/FormInput'
 import MiniHeading from '../components/MiniHeading'
 import Button from '../components/Button'
 import Title from '../components/Title'
 import MiniText from '../components/MiniText'
+import { useNavigation } from '@react-navigation/native'
 
 const SignUp = () => {
+  const navigation = useNavigation();
   return (
-    <SafeAreaView>
+  <View style={styles.cnt}>
+      <SafeAreaView>
       <View style={styles.view}>
             <Title  text="Sign Up" />
             <View style={styles.everything}>
@@ -22,13 +25,16 @@ const SignUp = () => {
             <View style={styles.everything}>
                 <MiniHeading text="Repeat Password" />
                 <FormInput password={true} placeholder="yoursupersecretpassword" />
+                <TouchableOpacity onPress={() => navigation.navigate('LoginScreen')}>
                 <MiniText text="Already haven an account? Login!" />
+                </TouchableOpacity>
             </View>
             <View style={styles.buttonContainer}>
                 <Text style={styles.buttonStyle}>Sign Up</Text>
             </View>
       </View>
     </SafeAreaView>
+  </View>
   )
 }
 
@@ -67,6 +73,10 @@ buttonContainer: {
     top: "25%",
 justifyContent: "center",
 alignItems: "center",
+  },
+  cnt: {
+    height: "100%",
+    backgroundColor: '#000'
   },
   title: {
 
