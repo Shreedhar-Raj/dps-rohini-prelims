@@ -1,13 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import {TouchableOpacity, SafeAreaView, TextInput} from 'react-native';
+import MiniHeading from './components/MiniHeading';
+import Login from './screens/Login';
 import Button from './components/Button';
-import FormInput from './components/FormInput';
 
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      <FormInput placeholder="enter email here" />
+      <Login  />
     </SafeAreaView>
   );
 }

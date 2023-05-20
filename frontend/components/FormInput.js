@@ -4,10 +4,10 @@ import React from 'react'
 
 const FormInput = (props) => {
   return (
-    <SafeAreaView>
-        <TouchableOpacity style={styles.container}>
+    <SafeAreaView style={styles.container}>
+        <TouchableOpacity style={styles.inputContainer}>
         <View >
-        <TextInput placeholderTextColor='gray' selectionColor='white'
+        <TextInput color="white" secureTextEntry={props.password} placeholderTextColor='gray' textColor="white" selectionColor='white'
         placeholder={props.placeholder} styles={styles.input} />
         </View>
         </TouchableOpacity>
@@ -19,14 +19,12 @@ export default FormInput
 
 const styles = StyleSheet.create({
     input: {
-        color: 'white',
-        placeHolderTextColor: "#FFF",
-        textColor: '#FFF'
+        color: 'white'
     },
-    container: {
+    inputContainer: {
         backgroundColor: '#000',
         padding: 15,
-        color: "#FFFF",
+        color: "white",
         margin: 5,
         borderRadius: 20,
         width: 300,

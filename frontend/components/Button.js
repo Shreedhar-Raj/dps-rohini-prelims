@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
     },
   
     textStyle: {
-      fontSize: 14,
+      fontSize: 24,
       color: 'white',
       fontWeight: 'bold',
     },
