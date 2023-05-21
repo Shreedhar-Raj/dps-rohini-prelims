@@ -10,7 +10,7 @@ function pricing() {
           <div className={`bg-black border border-2 shadow-indigo-500 shadow-2xl border-violet-500 p-8 shadow rounded-lg`}>
             <h2 className={`text-2xl font-bold mb-4`}>Free</h2>
             <p className={`mb-4 text-gray-300`}>Free Forever</p>
-            <p className={`text-3xl font-bold mb-4`}>$9.99</p>
+            <p className={`text-3xl font-bold mb-4`}>₹0.0</p>
             <ul className={`text-white`}>
               <li className={`mb-2`}>➡️Chat and connect with other fans.</li>
               <li className={`mb-2`}>➡️Analytics and Statistics</li>
