@@ -27,39 +27,6 @@ With its focus on intelligent clustering and fostering engaging discussions, thi
 * Provides three tiers: Free, Basic, and Premium.
 * Generates revenue through targeted advertisements, premium and pro tier subscriptions, and tournament sponsorships.
 
-### Free Tier
-
-* AI matchmaking algorithm for fans to chat with fellow supporters.
-* Team tracker for analytics, data, and improvement graphs.
-* Personalized merch purchases for respective teams.
-* Ticket selling with bulk discounts.
-
-### Basic Tier
-
-* Includes all features from the Free tier.
-* Allows fans to meet up and attend events.
-* Offers up to 10% discount on merch and tickets.
-* Complimentary fan meetups at lounge locations.
-
-Pricing options:
-
-* $129 per month
-* $649 per 6 months
-* $1199 per year
-
-### Premium Tier
-
-* Includes all features from the Basic tier.
-* Hosts friendly matches between fans of opposing teams.
-* Provides up to 50% discount on merch and tickets.
-* Complimentary meetups with actual players at lounge locations.
-
-Pricing options:
-
-* $179 per month
-* $899 per 6 months
-* $1649 per year
-
 ## Tech Stack
 
 🔧 Technologies used in this project:
@@ -69,14 +36,7 @@ Pricing options:
 * Frontend: Tailwind CSS
 * Database: Firebase with Firestore
 
-## Revenue Model
-
-💰 The project generates revenue through the following means:
-
-1. Targeted advertisements
-2. Subscription fees for premium and pro tiers
-3. Sponsorships of tournaments
-
+## Run Backend
 
 **Prerequisites:**
 
