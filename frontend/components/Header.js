@@ -17,9 +17,9 @@ function Header() {
           <Link className={`text-gray-300 hover:text-white`} href="/pricing">Pricing</Link>
         </nav>
         <div className={`space-x-4`}>
-        <a href="/login" className={`bg-violet-500 border border-1 border-violet-500 shadow-violet-500/50  text-white font-bold py-2 px-4 rounded-md mt-4`}>
+        <Link href="/login" className={`bg-violet-500 border border-1 border-violet-500 shadow-violet-500/50  text-white font-bold py-2 px-4 rounded-md mt-4`}>
               Login
-            </a>
+            </Link>
           <Link href="/register" className={`bg-transparent border border-violet-500 text-white p-10 py-2 px-4 rounded-lg`}>Register</Link>
         </div>
       </div>
