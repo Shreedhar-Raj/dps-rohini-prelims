@@ -11,7 +11,9 @@ import dotenv
 from pydub import AudioSegment
 dotenv.load_dotenv()
 config = os.getenv("FB_CONFIG")
-
+@app.route('/', methods=['GET'])
+def name():
+  return "Hello World"
 
 @app.route('/api/user/login', methods=['POST']) 
 def login():
