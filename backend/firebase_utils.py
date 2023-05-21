@@ -7,6 +7,7 @@ import string
 
 from location_utils import get_city_coords
 from get_prediction import get_cluster
+from username_utils import random_name
 cred = credentials.Certificate('wikit-xino-firebase-adminsdk-knsf8-42dcbf6faa.json')  # Replace with your own path
 firebase_admin.initialize_app(cred)
 
@@ -41,7 +42,7 @@ def create_user(email, password, city, next_cap_hardik, rashid, rcb_win, sachin,
         'status': "online",
         'groupId': groupId,
         'team': team,
-        'username': email.split('@')[0],
+        'username': random_name(),
         'userId': user_id,
         'email': email, 
         'password': encrypted_password,
