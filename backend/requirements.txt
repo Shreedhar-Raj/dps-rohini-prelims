@@ -68,7 +68,7 @@ scipy
 six
 sympy
 threadpoolctl
-tiktoken
+
 toml
 torch
 tqdm
