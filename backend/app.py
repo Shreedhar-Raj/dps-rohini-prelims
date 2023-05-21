@@ -18,7 +18,7 @@ def name():
 def login():
     email = request.json['email']
     password = request.json['password']
-    return login_user(email, password), "success"
+    return login_user(email, password), "success", 200
     
 @app.route('/api/user/create', methods=['POST'])
 def create():
@@ -30,13 +30,13 @@ def create():
     rcb_win = request.json['rcb_win']
     sachin = request.json['sachin']
     team = request.json['team']
-    return create_user(email, password, city, next_cap_hardik, rashid, rcb_win, sachin, team)
+    return create_user(email, password, city, next_cap_hardik, rashid, rcb_win, sachin, team) , "success", 200
 @app.route('/api/groups/message', methods=['POST'])
 def message():
     groupId = request.json['groupId']
     message = request.json['message']
     userId = request.json['userId']
-    return create_message(groupId, message, userId)
+    return create_message(groupId, message, userId), "success", 200
 
 
 if __name__ == '__main__':
