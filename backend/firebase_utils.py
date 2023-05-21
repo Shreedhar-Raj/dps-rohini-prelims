@@ -113,4 +113,3 @@ def create_message(groupId, sender_ID, message):
 
     return 'success'
 
-create_message(16, "a0SVJKlUFl95BmJwWhbv", "this is the message that shreedhar sent to prisha coz he loved her!!!❤️")
