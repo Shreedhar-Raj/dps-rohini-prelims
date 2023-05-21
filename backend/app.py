@@ -5,12 +5,11 @@ app = Flask(__name__)
 
 import os
 from flask import Flask, request, jsonify
-from openai_utils import transcribe
+
 from firebase_utils import *
-import dotenv
+
 from pydub import AudioSegment
-dotenv.load_dotenv()
-config = os.getenv("FB_CONFIG")
+
 @app.route('/', methods=['GET'])
 def name():
   return "Hello World"
