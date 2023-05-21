@@ -10,7 +10,7 @@ from firebase_utils import *
 
 from pydub import AudioSegment
 
-@app.route('/', methods=['GET'])
+@app.route('/api', methods=['GET'])
 def name():
   return "Hello World"
 
