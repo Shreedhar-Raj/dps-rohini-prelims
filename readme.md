@@ -41,24 +41,12 @@ With its focus on intelligent clustering and fostering engaging discussions, thi
 * Offers up to 10% discount on merch and tickets.
 * Complimentary fan meetups at lounge locations.
 
-Pricing options:
-
-* $129 per month
-* $649 per 6 months
-* $1199 per year
-
 ### Premium Tier
 
 * Includes all features from the Basic tier.
 * Hosts friendly matches between fans of opposing teams.
 * Provides up to 50% discount on merch and tickets.
 * Complimentary meetups with actual players at lounge locations.
-
-Pricing options:
-
-* $179 per month
-* $899 per 6 months
-* $1649 per year
 
 ## Tech Stack
 
