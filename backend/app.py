@@ -18,7 +18,7 @@ def name():
 def login():
     email = request.json['email']
     password = request.json['password']
-    return login_user(email, password)
+    return login_user(email, password), "success"
     
 @app.route('/api/user/create', methods=['POST'])
 def create():
