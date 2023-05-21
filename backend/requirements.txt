@@ -72,7 +72,7 @@ tiktoken
 toml
 torch
 tqdm
-typing_extensions=
+typing_extensions
 tzdata
 uritemplate
 urllib3
