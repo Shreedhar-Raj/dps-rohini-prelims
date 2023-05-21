@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 function Header() {
@@ -10,16 +11,16 @@ function Header() {
           
         </div>
         <nav className={`space-x-4`}>
-          <a className={`text-gray-300 hover:text-white`} href="home">Home</a>
-          <a className={`text-gray-300 hover:text-white`} href="/shop">Shop</a>
-          <a className={`text-gray-300 hover:text-white`} href="/chat">Group Chat</a>
-          <a className={`text-gray-300 hover:text-white`} href="/pricing">Pricing</a>
+          <Link className={`text-gray-300 hover:text-white`} href="home">Home</Link>
+          <Link className={`text-gray-300 hover:text-white`} href="/shop">Shop</Link>
+          <Link className={`text-gray-300 hover:text-white`} href="/chat">Group Chat</Link>
+          <Link className={`text-gray-300 hover:text-white`} href="/pricing">Pricing</Link>
         </nav>
         <div className={`space-x-4`}>
         <a href="/login" className={`bg-violet-500 border border-1 border-violet-500 shadow-violet-500/50  text-white font-bold py-2 px-4 rounded-md mt-4`}>
               Login
             </a>
-          <a href="/register" className={`bg-transparent border border-violet-500 text-white p-10 py-2 px-4 rounded-lg`}>Register</a>
+          <Link href="/register" className={`bg-transparent border border-violet-500 text-white p-10 py-2 px-4 rounded-lg`}>Register</Link>
         </div>
       </div>
     </header>
