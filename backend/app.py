@@ -39,29 +39,6 @@ def message():
     userId = request.json['userId']
     return create_message(groupId, message, userId)
 
-@app.route('/api/transcribe-audio', methods=['POST'])
-def transcribe_audio():
-    if 'audio' not in request.files:
-        return jsonify({'error': 'No audio file found.'}), 400
-
-    audio_file = request.files['audio']
-    if audio_file.filename == '':
-        return jsonify({'error': 'No selected audio file.'}), 400
-
-    try:
-
-        audio = AudioSegment.from_file(audio_file)
-        audio.export('audio.wav', format='wav')
-
-
-        transcription = transcribe('audio.wav')
-
-
-        return jsonify({'transcription': transcription})
-    except Exception as e:
-        return jsonify({'error': str(e)}), 500
-    finally:
-        os.remove('audio.wav')
 
 if __name__ == '__main__':
     app.debug = True
