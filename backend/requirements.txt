@@ -1,7 +1,7 @@
 attrs
 blinker
 CacheControl
-cachetools5.3.
+cachetools
 certifi
 cffi
 charset-normalizer
