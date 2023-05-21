@@ -1,8 +1,10 @@
+import Header from '@/components/Header'
 import React from 'react'
 
 function register() {
   return (
     <div className={`flex items-center justify-center min-h-screen bg-black`}>
+      <Header />
       <div className={`bg-black border border-2 border-violet-500 shadow-md rounded-lg px-8 pt-6 pb-8 mb-4 max-w-md w-full`}>
         <h2 className={`text-4xl font-bold mb-4 text-center text-white`}>Register</h2>
         <form>
@@ -11,7 +13,7 @@ function register() {
               Name
             </label>
             <input
-              className={`shadow-2xl shadow-violet-500 bg-black appearance-none border border-2 border-violet-500 rounded-xl w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline`}
+              className={`shadow-2xl shadow-violet-500 bg-black appearance-none border border-2 border-violet-500 rounded-xl w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline`}
               id="name"
               type="text"
               placeholder="Enter your name"
@@ -23,7 +25,7 @@ function register() {
               Email
             </label>
             <input
-              className={`shadow-2xl shadow-violet-500 appearance-none border border-2 border-violet-500 bg-black rounded-xl w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline`}
+              className={`shadow-2xl shadow-violet-500 appearance-none border border-2 border-violet-500 bg-black rounded-xl w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline`}
               id="email"
               type="email"
               placeholder="Enter your email"
@@ -35,7 +37,7 @@ function register() {
               Password
             </label>
             <input
-              className={`shadow-2xl bg-black shadow-violet-500 appearance-none border border-2 border-violet-500 rounded-2xl w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline`}
+              className={`shadow-2xl bg-black shadow-violet-500 appearance-none border border-2 border-violet-500 rounded-2xl w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline`}
               id="password"
               type="password"
               placeholder="Enter your password"

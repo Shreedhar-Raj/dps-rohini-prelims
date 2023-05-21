@@ -1,9 +1,14 @@
 
+import Header from '@/components/Header'
 import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 function pricing() {
   return (
-    <div className={`bg-black min-h-screen text-white`}>
+    <div className={`flex items-center justify-center h-screen bg-black`}>
+      <div>
+        <Header />
+      </div>
+      <div>
       <div className={`container mx-auto px-4 py-16 text-white`}>
         <h1 className={`text-4xl font-bold mb-8 text-center`}>Pricing</h1>
         <div className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8`}>
@@ -50,6 +55,7 @@ function pricing() {
             </button>
           </div>
         </div>
+      </div>
       </div>
     </div>
   )

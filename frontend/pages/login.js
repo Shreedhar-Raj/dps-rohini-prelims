@@ -1,8 +1,10 @@
+import Header from '@/components/Header'
 import React from 'react'
 
 function login() {
   return (
     <div className={`flex items-center justify-center h-screen bg-black`}>
+      <Header />
       <div className={`bg-black max-w-lg w-full border border-2 shadow-md shadow-violet-500 border-violet-500 rounded-lg text-white p-10`}>
         <h2 className={`text-4xl font-bold mb-4 text-center`}>Login</h2>
         <form>
@@ -11,7 +13,7 @@ function login() {
               Email
             </label>
             <input
-              className={`shadow appearance-none border border-2 border-violet-500 shadow-2xl shadow-violet-500 bg-black rounded-xl rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline`}
+              className={`shadow appearance-none border border-2 border-violet-500 shadow-2xl shadow-violet-500 bg-black rounded-xl rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline`}
               id="email"
               type="email"
               placeholder="Enter your email"
@@ -23,7 +25,7 @@ function login() {
               Password
             </label>
             <input
-              className={`shadow appearance-none bg-black border border-2 border-violet-500 shadow-2xl shadow-violet-500 rounded-xl w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline`}
+              className={`shadow appearance-none bg-black border border-2 border-violet-500 shadow-2xl shadow-violet-500 rounded-xl w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline`}
               id="password"
               type="password"
               placeholder="Enter your password"
