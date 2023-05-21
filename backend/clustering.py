@@ -5,7 +5,7 @@ from sklearn.cluster import KMeans
 from sklearn.metrics import silhouette_score
 import matplotlib.pyplot as plt
 
-data = pd.read_csv("/Users/aarush/Documents/Coding/dps-rohini-prelims/backend/train.csv")
+data = pd.read_csv("/Users/aarush/Documents/Coding/dps-rohini-prelims/backend/clusters.csv")
 
 k = 20
 kmeans = KMeans(n_clusters=k)
