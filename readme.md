@@ -6,7 +6,7 @@ Wikit
 
 📝
 
-The project is a dynamic app that connects sports fans with similar interests through intelligent clustering algorithms. Its main objective is to create a vibrant community by facilitating discussions and interactions among fans who share a passion for the same sports team.
+The project is a dynamic web app that connects sports fans with similar interests through intelligent clustering algorithms. Its main objective is to create a vibrant community by facilitating discussions and interactions among fans who share a passion for the same sports team.
 
 Using state-of-the-art unsupervised machine learning techniques, the app employs scikit-learn's powerful K-means clustering model. This allows the app to analyze user profiles, preferences, and engagement patterns to group fans into clusters based on their shared interests, team affiliations, and other relevant factors. By matching fans with the most compatible groups, the app fosters engaging conversations, enables the exchange of ideas and opinions, and creates a sense of belonging among users.
 
